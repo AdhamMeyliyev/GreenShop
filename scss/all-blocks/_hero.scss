@@ -1,0 +1,55 @@
+.hero{
+    margin-top: 12px;
+    .container{
+        height: 450px;
+        background-color: #F5F5F5;
+        
+        .hero--left{
+            margin-top: 68px;
+            margin-left: 43px;
+            .hero__h4{
+                font-size: 14px;
+                line-height: 16px;
+                color:$text-color;
+                
+            }
+
+            .hero__h1{
+                font-size: 70px;
+                line-height: 70px;
+                column-rule-color: $text-color;
+                letter-spacing: 4px;
+                margin-top: 7px;
+            }
+
+            .hero__h1__span{
+                color:$text-color2;
+
+            }
+
+            .hero--left__desc{
+                font-size: $all-card-desc;
+                line-height: 24px;
+                color: #727272;
+                width: 557px;
+                margin-top: 5px;
+                margin-bottom: 55px;
+            }
+        }
+        
+    }
+}
+
+.hero--right{
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    margin-top: -30px;
+    margin-left: 80px;
+
+    .hero--right__img1{
+        margin-right: -200px;
+        margin-bottom: -300px;
+    }
+}
+

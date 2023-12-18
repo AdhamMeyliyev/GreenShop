@@ -1,0 +1,89 @@
+$header-btn-bg-color:#46A358;
+$header-btn-text-color:#FFFFFF;
+$header-btn-text-size:16px;
+$header-btn-width:100px;
+$header-btn-height:35px;
+$header-btn-border-radius:5px;
+
+$btn-border: 3px solid #46A358;
+
+$shop-find-more-btn-bg-color:#46A358;
+$shop-find-more-btn-text-color:#FFFFFF;
+$shop-find-more-btn-text-size:16px;
+$shop-find-more-btn-border-radius:5px;
+$shop-find-more-btn-width:140px;
+$shop-find-more-btn-height: 40px;
+
+$filter-btn-bg-color:#46A358;
+$filter-btn-text-color:#FFFFFF;
+$filter-btn-text-size:16px;
+$filter-btn-width:90px;
+$filter-btn-height:35px;
+$filter-btn-border-radius:5px;
+
+
+.header__button::before{
+    content:url(/assets/icon/login-icon.svg);
+    position: relative;
+    top: 3px;
+    left: -4px;
+}
+
+.header__button{
+    width: $header-btn-width;
+    height: $header-btn-height;
+    border:$btn-border;
+    background-color: $header-btn-bg-color;
+    color:$header-btn-text-color;
+    font-size: $header-btn-text-size;
+    border-radius:$header-btn-border-radius;
+    transition:all .3s ease;
+}
+
+.header__button:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition:all .3s ease;
+}
+
+.header__button:active{
+    opacity: .7;
+}
+
+.hero__btn{
+    width: $shop-find-more-btn-width;
+    height: $shop-find-more-btn-height;
+    background-color: $shop-find-more-btn-bg-color;
+    color:$shop-find-more-btn-text-color;
+    font-size: $shop-find-more-btn-text-size;
+    border:$btn-border;
+    border-radius:$shop-find-more-btn-border-radius;
+    transition: all .3s ease;
+}
+
+.hero__btn:hover{
+    background-color: transparent;
+    color:#46A358;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// .header__btn{
+//     width: $header-btn-width;
+//     height: $header-btn-height;
+//     border-radius: $header-btn-border-radius;
+//     background-color: $header-btn-bg-color;
+//     border: $btn-border-none;
+//     font-size: $header-btn-text-color;
+//     color: $header-btn-text-color;
+// }

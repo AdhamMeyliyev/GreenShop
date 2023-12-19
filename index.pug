@@ -34,24 +34,92 @@ html(lang="en")
 
         //- /HEADER
 
-        //- HERO
         
-        section.hero 
-            .container.d-flex
-                .hero--left
-                    h4.hero__h4 Welcome to GreenShop
-                    h1.hero__h1 Let’s Make a #[br] Better #[span.hero__h1__span Planet]
-                    p.hero--left__desc We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!
+        main 
+            //- HERO
 
-                    button.hero__btn SHOP NOW 
-                     
-                .hero--right
-                    img(src="../assets/images/hero-small-image.svg", alt="rasm").hero--right__img1
-                    img(src="../assets/images/hero--big__image.svg", alt="rasm").hero--right__img2
+            section.hero 
+                .container.d-flex
+                    .hero--left
+                        h4.hero__h4 Welcome to GreenShop
+                        h1.hero__h1 Let’s Make a #[br] Better #[span.hero__h1__span Planet]
+                        p.hero--left__desc We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!
+
+                        button.hero__btn SHOP NOW 
+                        
+                    .hero--right
+                        img(src="../assets/images/hero-small-image.svg", alt="rasm").hero--right__img1
+                        img(src="../assets/images/hero--big__image.svg", alt="rasm").hero--right__img2
+
+            //- /HERO
+
+            //- MAIN CARDS
+
+            section.main--cards 
+                .container 
+                    .main--cards--left
+                        .main--cards--left-top
+                            h3.main--cards--left__h3 Categories
+                            .cards--values.cards--values1.d-flex.a-items-c 
+                                p.cards--values__desc House Plants
+                                ins.cards--values__ins  (33)
+                            .cards--values.d-flex.a-items-c 
+                                p.cards--values__desc Potter Plants
+                                ins.cards--values__ins  (12)   
+                            .cards--values.d-flex.a-items-c 
+                                p.cards--values__desc Seeds
+                                ins.cards--values__ins  (65)   
+                            .cards--values.d-flex.a-items-c 
+                                p.cards--values__desc Small Plants
+                                ins.cards--values__ins  (39)   
+                            .cards--values.d-flex.a-items-c 
+                                p.cards--values__desc Big Plants
+                                ins.cards--values__ins  (23)   
+                            .cards--values.d-flex.a-items-c 
+                                p.cards--values__desc Succulents
+                                ins.cards--values__ins  (17) 
+                            .cards--values.d-flex.a-items-c 
+                                p.cards--values__desc Trerrariums
+                                ins.cards--values__ins  (19)   
+                            .cards--values.d-flex.a-items-c 
+                                p.cards--values__desc Gardening
+                                ins.cards--values__ins  (13)   
+                            .cards--values.d-flex.a-items-c 
+                                p.cards--values__desc Accessories 
+                                ins.cards--values__ins  (18) 
+
+                            h3.main--cards--left__h3__2 Price Range
+
+                            form.value__form
+                                input(type="range").value__input 
+                                p.price__desc Price: #[ins.price__ins $39 - $1230 ]  
+                                button.filter__btn Filter
+
+                            h3.main--cards--left__h3 Size
+                            .cards--values.d-flex.a-items-c 
+                                p.cards--values__desc Small
+                                ins.cards--values__ins  (119)
+                            .cards--values.d-flex.a-items-c 
+                                p.cards--values__desc Medium
+                                ins.cards--values__ins  (86)   
+                            .cards--values.d-flex.a-items-c 
+                                p.cards--values__desc Large
+                                ins.cards--values__ins  (78)   
+
+//- Potter Plants
+//- Seeds
+//- Small Plants
+//- Big Plants
+//- Succulents
+//- Trerrariums
+//- Gardening
+//- Accessories 
+
+                        .main--cards--left-bottom 
+                    .main--cards--right
 
 
-
-        //- /HERO
+        
 
 
         

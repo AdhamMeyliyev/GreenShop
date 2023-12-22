@@ -76,8 +76,17 @@ $filter-btn-border-radius:5px;
     color:$filter-btn-text-color;
     font-size: $filter-btn-text-size;
     border-radius:$filter-btn-border-radius;
+    transition: all .3s ease;
+    margin-bottom: 23px;
 }
 
+
+.filter__btn:hover{
+    background-color: transparent;
+    color:#46A358;
+    font-weight: bold;
+    transition: all .3s ease;
+}
 
 
 

@@ -104,7 +104,7 @@ $filter-btn-border-radius:5px;
     border:$btn-border;
     position: relative;
     cursor: $btn-cursor;
-
+    transition: all .3s ease;
 }
 
 .find-more__btn::after{
@@ -113,6 +113,51 @@ $filter-btn-border-radius:5px;
     top: 10px;
     margin-left: 5px;
 }
+
+.find-more__btn:hover{
+    background-color: transparent;
+    color:$text-color2;
+    font-weight: bold;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all .3s ease;
+}
+
+.our-blog__btn{
+    border:none;
+    background-color: transparent;
+    color:$text-color;
+    font-weight: bold;
+    margin-top: 9px;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.our-blog__btn::after{
+    content:url(/assets/icon/Arrow\ -\ Right__our-blog1.svg);
+    position: absolute;
+    top: 1px;
+    left: 70px;
+}
+
+.our-blog__btn:hover::after{
+    content:url(/assets/icon/Arrow\ -\ Right__our-blog2.svg);
+    position: absolute;
+    top: 1px;
+    left: 70px;
+
+}
+
+.our-blog__btn:hover{
+    color:$text-color2;
+    transition: all .3s ease;
+}
+
+.our-blog__btn:active{
+    opacity: .6;
+    transition: all .3s ease;
+}
+
 
 
 

@@ -40,6 +40,7 @@ ins {
   font-size: 16px;
   border-radius: 5px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .header__button:hover {
@@ -60,6 +61,7 @@ ins {
   border: 3px solid #46A358;
   border-radius: 5px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .hero__btn:hover {
@@ -79,6 +81,7 @@ ins {
   border-radius: 5px;
   transition: all 0.3s ease;
   margin-bottom: 23px;
+  cursor: pointer;
 }
 
 .filter__btn:hover {
@@ -86,6 +89,25 @@ ins {
   color: #46A358;
   font-weight: bold;
   transition: all 0.3s ease;
+}
+
+.find-more__btn {
+  width: 170px;
+  height: 40px;
+  background-color: #46A358;
+  color: #FFFFFF;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 3px solid #46A358;
+  position: relative;
+  cursor: pointer;
+}
+
+.find-more__btn::after {
+  content: url(/assets/icon/Arrow\ -\ Right__find-more.svg);
+  position: absolute;
+  top: 10px;
+  margin-left: 5px;
 }
 
 .header--right {
@@ -479,4 +501,109 @@ ins {
   line-height: 16px;
   text-align: center;
   padding-top: 6px;
+}
+
+.cards__ins__span {
+  text-decoration: line-through;
+  color: #A5A5A5;
+  font-weight: 300;
+  margin-left: 16px;
+}
+
+.drop-down {
+  margin-top: 90px;
+  margin-bottom: 94px;
+}
+.drop-down .container {
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.drop1 {
+  width: 35px;
+  height: 35px;
+  background-color: #46A358;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  border-radius: 4px;
+}
+
+.drop2 {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #E5E5E5;
+  transition: all 0.3s ease;
+}
+
+.drop2:hover {
+  border: 1px solid #46A358;
+  transition: all 0.3s ease;
+}
+
+.drop2:active {
+  background-color: #46A358;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.drop1__desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.drop1__icon {
+  display: block;
+  margin: 0 auto;
+  transform: translate(-50%, 50%);
+  margin-left: 17px;
+}
+
+.find-more__item {
+  width: 586px;
+  height: 250px;
+  background-color: #fbfbfb;
+  position: relative;
+}
+
+.find-more__item--right {
+  text-align: right;
+  margin-top: 37px;
+  z-index: 1;
+  padding-right: 30px;
+  position: absolute;
+  right: 10px;
+}
+.find-more__item--right .find-more__h2 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #3D3D3D;
+  margin-bottom: 9px;
+  font-weight: bold;
+}
+.find-more__item--right .find-more__desc {
+  font-size: 14px;
+  line-height: 24px;
+  color: #727272;
+  width: 292px;
+  margin-bottom: 25px;
+}
+
+.find--more__img {
+  position: absolute;
+  bottom: 0px;
+}
+
+.find-more__list {
+  gap: 28px;
+  margin-left: -30px;
 }/*# sourceMappingURL=main.css.map */

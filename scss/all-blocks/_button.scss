@@ -6,6 +6,7 @@ $header-btn-height:35px;
 $header-btn-border-radius:5px;
 
 $btn-border: 3px solid #46A358;
+$btn-cursor: pointer;
 
 $shop-find-more-btn-bg-color:#46A358;
 $shop-find-more-btn-text-color:#FFFFFF;
@@ -38,6 +39,7 @@ $filter-btn-border-radius:5px;
     font-size: $header-btn-text-size;
     border-radius:$header-btn-border-radius;
     transition:all .3s ease;
+    cursor: $btn-cursor;
 }
 
 .header__button:hover{
@@ -59,6 +61,8 @@ $filter-btn-border-radius:5px;
     border:$btn-border;
     border-radius:$shop-find-more-btn-border-radius;
     transition: all .3s ease;
+    cursor: $btn-cursor;
+
 }
 
 .hero__btn:hover{
@@ -78,6 +82,8 @@ $filter-btn-border-radius:5px;
     border-radius:$filter-btn-border-radius;
     transition: all .3s ease;
     margin-bottom: 23px;
+    cursor: $btn-cursor;
+
 }
 
 
@@ -86,6 +92,26 @@ $filter-btn-border-radius:5px;
     color:#46A358;
     font-weight: bold;
     transition: all .3s ease;
+}
+
+.find-more__btn{
+    width: $shop-find-more-btn-width + 30px;
+    height: $shop-find-more-btn-height;
+    background-color: $shop-find-more-btn-bg-color;
+    color:$shop-find-more-btn-text-color;
+    font-size: $shop-find-more-btn-text-size;
+    border-radius:$shop-find-more-btn-border-radius;
+    border:$btn-border;
+    position: relative;
+    cursor: $btn-cursor;
+
+}
+
+.find-more__btn::after{
+    content:url(/assets/icon/Arrow\ -\ Right__find-more.svg);
+    position: absolute;
+    top: 10px;
+    margin-left: 5px;
 }
 
 

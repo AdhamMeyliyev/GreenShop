@@ -296,3 +296,49 @@
     font-weight: 300;
     margin-left: 16px;
   }
+
+  @media only screen and (max-width:366px){
+    .main--cards--left{
+      display: none !important;
+    }
+
+    .main--cards--right__link {
+      font-size: $all-card-desc !important;
+      line-height: 16px;
+      color:$text-color;
+    }
+
+    .cards__item{
+      width: 175px !important;
+      height: 245px !important;
+      background-color: #fbfbfb;
+      margin-top: 70px;
+      position: relative;
+      border-radius:20px;
+    }
+
+    .cards__img{
+      width: 168px !important;
+      height: 168px !important;
+      margin-top: -10px;
+      margin-left: 3.5px;
+      margin-bottom: 0px !important;
+    } 
+  
+    .cards__h3{
+      font-size: 15px;
+      margin-top: 20px;
+    }
+
+    .cards__ins{
+      font-size: 16px;
+    }
+
+    .main--cards--right__list{
+      width: 346px !important;
+    }
+
+    .main--cards--r-top__desc{
+      display: none;
+    }
+  }

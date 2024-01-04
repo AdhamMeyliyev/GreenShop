@@ -179,24 +179,111 @@ $filter-btn-border-radius:5px;
 }
 
 
+.minus{
+    width: 33px;
+    height: 38px;
+    border-radius:29px;
+    background-color: #46a358;
+    border:2px solid #46a358;
+    font-size: 26px;
+    @include line-h;
+    color:#fff;
+    text-align:center;
+    padding-bottom:5px;
+    cursor: pointer;
+ }
 
+ .plus{
+    width: 33px;
+    height: 38px;
+    border-radius:29px;
+    background-color: #46a358;
+    border:2px solid #46a358;
+    font-size: 26px;
+    @include line-h;
+    color:#fff;
+    text-align:center;
+    padding-left:1px;
+    cursor: pointer;
+ }
 
+ .buy-now__btn{
+    width: $shop-find-more-btn-width - 10px;
+    height: $shop-find-more-btn-height;
+    background-color: $shop-find-more-btn-bg-color;
+    color:$shop-find-more-btn-text-color;
+    font-size: $shop-find-more-btn-text-size;
+    border:$btn-border;
+    border-radius:$shop-find-more-btn-border-radius;
+    transition: all .3s ease;
+    cursor: $btn-cursor;
+ }
 
+ .buy-now__btn:hover{
+    background-color: transparent;
+    color:#46A358;
+    font-weight: bold;
+    transition: all .3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
 
+ .add-to-cart__btn{
+    background-color: transparent;
+    color:#46A358;
+    font-weight: bold;
+    transition: all .3s ease;
+    width: $shop-find-more-btn-width - 10px;
+    height: $shop-find-more-btn-height;
+    border-radius:$shop-find-more-btn-border-radius;
+    cursor: $btn-cursor;
+    font-size: $shop-find-more-btn-text-size;
+    border:2px solid #46a358;
 
+ }
 
+ .add-to-cart__btn:hover{
+    background-color: $btn-color;
+    color:#fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all .3s ease;
 
+ }
 
+ .like__btn{
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $btn-color;
+    border-radius:6px;
+    padding-top: 5px;
+    cursor: pointer;    
+    transition: all .3s ease;
 
+ }
 
+ .like__btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all .3s ease;
+      
+ }
 
+@media only screen and (max-width:366px){
+    .hero__btn{
+        background-color: transparent;
+        border:none;
+        color:$btn-color;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        position: relative;
+        margin-left: -36px;
+    }
 
-// .header__btn{
-//     width: $header-btn-width;
-//     height: $header-btn-height;
-//     border-radius: $header-btn-border-radius;
-//     background-color: $header-btn-bg-color;
-//     border: $btn-border-none;
-//     font-size: $header-btn-text-color;
-//     color: $header-btn-text-color;
-// }
+    .hero__btn::after{
+        content:url(/assets/icon/Arrow\ -\ Right__RWD-hero-btn.svg);
+        position: absolute;
+        top: 12px;
+        margin-left: 2px;
+
+    }
+}

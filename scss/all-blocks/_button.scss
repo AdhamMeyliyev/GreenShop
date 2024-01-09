@@ -267,6 +267,33 @@ $filter-btn-border-radius:5px;
       
  }
 
+
+ .proceet--btn{
+    width: 332px;
+    height: 40px;
+    background-color: #46a358;
+    border:$btn-border;
+    border-radius:3px;
+    font-size: $all-card-desc + 1px;
+    @include line-h;
+    font-weight: bold;
+    color:#fff;
+    cursor: pointer;
+    margin-top: 29px;
+    transition: all .3s ease;
+
+ }
+
+ .proceet--btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all .3s ease;
+}
+
+.proceet--btn:active{
+    opacity: .6;
+    transition: all .3s ease;
+}
+
 @media only screen and (max-width:366px){
     .hero__btn{
         background-color: transparent;
